@@ -1,0 +1,4 @@
+web2py
+psycopg2
+gunicorn
+requests

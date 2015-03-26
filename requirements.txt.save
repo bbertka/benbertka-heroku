@@ -1,0 +1,4 @@
+web2py
+gunicorn
+psycopg2
+git+git:/
