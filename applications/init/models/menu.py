@@ -10,7 +10,7 @@ response.title = request.application.replace('_',' ').title()
 response.subtitle = ''
 
 ## read more at http://dev.w3.org/html5/markup/meta.name.html
-response.meta.author = 'Benjamin Bertka <benjamin.bertka@emc.com>'
+response.meta.author = ''
 response.meta.keywords = 'web2py, python, framework'
 response.meta.generator = 'Web2py Web Framework'
 
@@ -21,9 +21,7 @@ response.google_analytics_id = None
 ## this is the main application menu add/remove items as required
 #########################################################################
 
-response.menu = [
-    #(T('Home'), False, '/', [])
-]
+response.menu = []
 
 DEVELOPMENT_MENU = True
 
@@ -37,10 +35,7 @@ def _():
     app = request.application
     ctr = request.controller
     # useful links to internal and external resources
-    response.menu += [
-      #  (SPAN('Tools', _class='highlighted'), False, '#', [
-      #  (T('MiTrend Mobile'), False, "/mitrend"),])
-        ]
+    response.menu += []
 if DEVELOPMENT_MENU: _()
 
 if "auth" in locals(): auth.wikimenu()
