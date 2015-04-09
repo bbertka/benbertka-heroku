@@ -7,13 +7,11 @@
 
 ## if SSL/HTTPS is properly configured and you want all HTTP requests to
 ## be redirected to HTTPS, uncomment the line below:
-request.requires_https()
+# request.requires_https()
 
 if not request.env.web2py_runtime_gae:
     ## if NOT running on Google App Engine use SQLite or other DB
-    try: db = DAL(os.environ.get('DATABASE_URL'))
-    except: db = DAL('sqlite://storage.sqlite')
-
+    db = DAL('sqlite://storage.sqlite',pool_size=1,check_reserved=['all'])
 else:
     ## connect to Google BigTable (optional 'google:datastore://namespace')
     db = DAL('google:datastore+ndb')

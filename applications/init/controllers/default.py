@@ -10,6 +10,8 @@
 #########################################################################
 
 def index():
+    response.title = 'Ben Bertka'
+    response.subtitle = 'Digital Resume'
     """
     example action using the internationalization operator T and flash
     rendered by views/default/index.html or views/generic.html
@@ -17,14 +19,11 @@ def index():
     if you need a simple wiki simply replace the two lines below with:
     return auth.wiki()
     """
-    response.title = 'EMC Pac Labs'
-    response.subtitle = 'DevOps Test-Dev Server'
     
-    return dict(message=T('Welcome!'))
+    return dict(message=T('Resume'))
 
 
 def user():
-    response.title = 'EMC Pac Labs'
     """
     exposes:
     http://..../[app]/default/user/login
