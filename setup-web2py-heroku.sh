@@ -8,5 +8,6 @@ git init
 git add .
 git add Procfile
 git commit -a -m "Initial Commit"
-heroku create
+read -p "Choose your project name?" pname
+heroku create $pname
 git push heroku master

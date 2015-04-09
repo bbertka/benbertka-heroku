@@ -32,7 +32,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/root/repos/mitrend-web2py/venv"
+set -gx VIRTUAL_ENV "/Users/bertkb/repos/mitrend-web2py-heroku/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

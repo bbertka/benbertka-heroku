@@ -39,7 +39,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/root/repos/mitrend-web2py/venv"
+VIRTUAL_ENV="/Users/bertkb/repos/mitrend-web2py-heroku/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
