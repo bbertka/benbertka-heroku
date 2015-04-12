@@ -4,8 +4,8 @@
 #########################################################################
 ## Customize your APP title, subtitle and menus here
 #########################################################################
-
-response.logo = A(B('Ben Bertka'), _class="brand",_href="/")
+response.logo = A(I(_class='fa fa-code fa-2x'), _class="brand",_href="/")
+#response.logo = A(B('Ben Bertka'), _class="brand",_href="/")
 #Overridden by App
 #response.title = 'Ben Bertka'
 #response.subtitle = 'Digital Resume'
@@ -27,10 +27,10 @@ response.menu = [
 #(CAT(I(_class='fa fa-github fa-lg'), T(' GitHub')), False, URL('default', 'index')),
 #(CAT(I(_class='fa fa-linkedin fa-lg'), T(' LinkedIn')), False, URL('default', 'index')),
 #(CAT(I(_class='fa fa-twitter fa-lg'), T(' Twitter')), False, URL('default', 'index')),
-(CAT(I(_class='fa fa-home fa-lg')), False, "/"),
-(CAT(I(_class='fa fa-github fa-lg')), False, "https://github.com/bbertka"),
-(CAT(I(_class='fa fa-linkedin fa-lg')), False, "https://www.linkedin.com/in/benbertka"),
-(CAT(I(_class='fa fa-twitter fa-lg')), False, "https://twitter.com/bbertka"),
+(CAT(I(_class='fa fa-home fa-2x brand')), False, "/"),
+(CAT(I(_class='fa fa-github fa-2x brand')), False, "https://github.com/bbertka"),
+(CAT(I(_class='fa fa-linkedin fa-2x brand')), False, "https://www.linkedin.com/in/benbertka"),
+(CAT(I(_class='fa fa-twitter fa-2x brand')), False, "https://twitter.com/bbertka"),
 ]
 
 DEVELOPMENT_MENU = False
@@ -144,3 +144,4 @@ def _():
 if DEVELOPMENT_MENU: _()
 
 if "auth" in locals(): auth.wikimenu()
+
