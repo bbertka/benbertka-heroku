@@ -1,6 +1,6 @@
 {{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
 {{extend 'layout.html'}}
-
+{{=A(I(_class='fa fa-download fa-2x brand'), B(' Download PDF'),_href="/init/static/bertka_resume_2015.pdf?attachment")}}
 {{if 'message' in globals():}}
 <h4>{{=T('Summary')}}</h4>
 <table>

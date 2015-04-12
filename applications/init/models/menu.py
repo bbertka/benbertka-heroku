@@ -23,10 +23,6 @@ response.google_analytics_id = None
 #########################################################################
 
 response.menu = [
-#(CAT(I(_class='fa fa-home fa-lg'), T(' Home')), False, URL('default', 'index')),
-#(CAT(I(_class='fa fa-github fa-lg'), T(' GitHub')), False, URL('default', 'index')),
-#(CAT(I(_class='fa fa-linkedin fa-lg'), T(' LinkedIn')), False, URL('default', 'index')),
-#(CAT(I(_class='fa fa-twitter fa-lg'), T(' Twitter')), False, URL('default', 'index')),
 (CAT(I(_class='fa fa-home fa-2x brand')), False, "/"),
 (CAT(I(_class='fa fa-github fa-2x brand')), False, "https://github.com/bbertka"),
 (CAT(I(_class='fa fa-linkedin fa-2x brand')), False, "https://www.linkedin.com/in/benbertka"),
