@@ -1,5 +1,6 @@
 {{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
 {{extend 'layout.html'}}
+{{=A(I(_class='fa fa-envelope fa-2x brand'),_href="mailto:bbertka@gmail.com")}}
 {{=A(I(_class='fa fa-download fa-2x brand'), B(' Download PDF'),_href="/init/static/bertka_resume_2015.pdf?attachment")}}
 {{if 'message' in globals():}}
 <h4>{{=T('Summary')}}</h4>
@@ -293,32 +294,21 @@ I reverse engineered all aspects of the Ultrasurf HTTP proxy tool and created an
 {{block right_sidebar}}
 
 <table>
-      <tr><td><h5><a href="/init/static/bertka_resume_2015.pdf?attachment"><i class='fa fa-download fa-2x' ></i>  Download PDF</a></h5></td></tr>
-
-        <tr>
-        <td>
- <h5>{{=T("Contact Info")}}</h5>
-<ul>
-  <li>{{=T("Cell: 206.214.8602")}}</li>
-  <li>{{=T("Email: bbertka@gmail.com")}}</li>
-</ul>
-        </td>
-      
-    </tr>
 <tr>
     <td>
         <br>
-        <img src="/init/static/images/expert.jpg">
+        <img src="/init/static/images/giac.png">
     </td>
     </tr>
     <tr>
     <td>
         <br>
-        <img src="/init/static/images/giac.png">
+        <img src="/init/static/images/expert.jpg">
     </td>
     </tr>
 </table>
 
 
 {{end}}
+
 
