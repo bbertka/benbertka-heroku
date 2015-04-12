@@ -3,11 +3,15 @@
 
 {{if 'message' in globals():}}
 <h4>{{=T('Summary')}}</h4>
+<table>
+    <tr><td>
 <ul>
 <li>Specialist in cloud computing, information security, and software engineering</li>
 <li>Consulting skills in requirements elicitation, UML design, demos, negotiations, and PowerPoint</li>
 <li>2 years of experience in enterprise SOC and IPS vendor roles, with 5 years of Linux development</li>
 </ul>
+    </td></tr>
+</table>
 <h4>{{=T('Specialized Knowledge')}}</h4>
 <table>
     <tr>
@@ -28,19 +32,6 @@
     </ul>
     </tr>
 </table>
-<h4>{{=T('Education & Publications')}}</h4>
-<ul>
-<li>
-<h5>Master of Software Systems - University of British Columbia, Class of 2012</h5>
-<a href='http://blogs.ubc.ca/computersecurity/files/2012/04/BBertka_bbertka_571B_final.pdf'>802.11w security: DoS attacks and vulnerability controls. In Proc. of Infocom, 2012.</a>
-</li>
-<li><h5>Master of Science, Visualization - Texas A&M University, College Station</h5>
-<a href='http://repository.tamu.edu/bitstream/handle/1969.1/ETD-TAMU-2010-12-8736/BERTKA-THESIS.pdf'>Modding for Emergence: Using Cellular Automata, Randomness, and Influence Maps in the Source Game Engine</a>
-</li>
-<li><h5>Bachelor of Arts, Mathematics - University of California, Santa Cruz</h5>
-<a href='http://fei.edu.br/~psergio/CG_arquivos/IntroSplines.pdf'>Introduction to Bezier Curves, B-Splines, and Tensor Product Surfaces</a>
-</li>
-</ul>
 <h4>{{=T('Certifications')}}</h4>
 <table>
     <tr>
@@ -60,6 +51,9 @@
     </tr>
 </table>
 <h4>{{=T('Experience')}}</h4>
+<table>
+<tr>
+<td>
 <ul>
 <li>
     <h5>
@@ -271,6 +265,25 @@ I reverse engineered all aspects of the Ultrasurf HTTP proxy tool and created an
    </p>
 </li>
 </ul>
+</td></tr>
+</table>
+<h4>{{=T('Education & Publications')}}</h4>
+<table>
+    <tr><td>
+<ul>
+<li>
+<h5>Master of Software Systems - University of British Columbia, Class of 2012</h5>
+<a href='http://blogs.ubc.ca/computersecurity/files/2012/04/BBertka_bbertka_571B_final.pdf'>802.11w security: DoS attacks and vulnerability controls. In Proc. of Infocom, 2012.</a>
+</li>
+<li><h5>Master of Science, Visualization - Texas A&M University, College Station</h5>
+<a href='http://repository.tamu.edu/bitstream/handle/1969.1/ETD-TAMU-2010-12-8736/BERTKA-THESIS.pdf'>Modding for Emergence: Using Cellular Automata, Randomness, and Influence Maps in the Source Game Engine</a>
+</li>
+<li><h5>Bachelor of Arts, Mathematics - University of California, Santa Cruz</h5>
+<a href='http://fei.edu.br/~psergio/CG_arquivos/IntroSplines.pdf'>Introduction to Bezier Curves, B-Splines, and Tensor Product Surfaces</a>
+</li>
+</ul>
+    </td></tr>
+</table>
 
 {{elif 'content' in globals():}}
 {{=content}}
@@ -289,4 +302,5 @@ I reverse engineered all aspects of the Ultrasurf HTTP proxy tool and created an
 <h5><a href="/init/static/bertka_resume_2015.pdf?attachment">Download PDF</a></h5>
 
 {{end}}
+
 
