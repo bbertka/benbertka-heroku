@@ -6,8 +6,9 @@
 #########################################################################
 
 response.logo = A(B('Ben Bertka'), _class="brand",_href="/")
-response.title = 'Ben Bertka'
-response.subtitle = ''
+#Overridden by App
+#response.title = 'Ben Bertka'
+#response.subtitle = 'Digital Resume'
 
 ## read more at http://dev.w3.org/html5/markup/meta.name.html
 response.meta.author = 'Ben Bertka <bbertka@gmail.com>'
