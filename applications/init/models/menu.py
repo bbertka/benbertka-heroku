@@ -4,7 +4,7 @@
 #########################################################################
 ## Customize your APP title, subtitle and menus here
 #########################################################################
-#response.logo = A(I(_class='fa fa-code fa-2x'), _class="brand",_href="/")
+response.logo = A(I(_class='fa fa-leaf fa-lg'), B('Ben Bertka | Digital Resume'), _class="brand",_href="/")
 #response.logo = A(B('Ben Bertka'), _class="brand",_href="/")
 #Overridden by App
 #response.title = 'Ben Bertka'

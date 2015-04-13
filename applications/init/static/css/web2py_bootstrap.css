@@ -262,3 +262,8 @@ div.controls .error {
         margin-left: -20px;
     }
 }
+
+
+.stretch {
+ width: 100%;
+}

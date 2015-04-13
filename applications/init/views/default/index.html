@@ -1,6 +1,6 @@
 {{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
 {{extend 'layout.html'}}
-<table>
+<table class='stretch'>
     <tr><td>
 {{=A(I(_class='fa fa-github fa-2x brand'), B('  '),_href="https://github.com/bbertka")}}
     </td>
@@ -17,18 +17,23 @@
 {{=A(I(_class='fa fa-download fa-2x brand'), B('  '),_href="/init/static/bertka_resume_2015.pdf?attachment")}}
     </td></tr>
 </table>
+
 {{if 'message' in globals():}}
 <h4>{{=T('Summary')}}</h4>
-<table>
-<ul>
-<li>Specialist in cloud computing, information security, and software engineering</li>
-<li>Consulting skills in requirements elicitation, UML design, demos, negotiations, and PowerPoint</li>
-<li>2 years of experience in enterprise SOC and IPS vendor roles, with 5 years of Linux development</li>
-</ul>
-    </td></tr>
+<table class='stretch'>
+    <tr>
+        <td>
+            <ul>
+                <li>Specialist in cloud computing, information security, and software engineering</li>
+                <li>Consulting skills in requirements elicitation, UML design, demos, negotiations, and PowerPoint</li>
+                <li>2 years of experience in enterprise SOC and IPS vendor roles, with 5 years of Linux development</li>
+            </ul>
+        </td>
+    </tr>
 </table>
+
 <h4>{{=T('Specialized Knowledge')}}</h4>
-<table>
+<table class='stretch'>
     <tr>
       <td>
         <ul>
@@ -39,227 +44,201 @@
          </ul>
       </td>
       <td>
+         <ul>
           <li>Identity/Access Management & Governance </li>
           <li>IT Threat Intelligence & Risk Assessments</li>
           <li>Malware & Vulnerability Analysis</li>
-        <li>TCP/IP Network Traffic Analysi & DPI</li>
+          <li>TCP/IP Network Traffic Analysi & DPI</li>
+         </ul>
       </td>
-    </ul>
     </tr>
 </table>
+
 <h4>{{=T('Certifications')}}</h4>
-<table>
+<table class='stretch'>
     <tr>
       <td>
         <ul>
         <li>EMC Cloud Architect (EMCCA)</li>
         <li>EMC IT-as-a-Service Expert (EMCCAe)</li>
         <li>EMC Virtualized Infrastructure Specialist (EMCCAs)</li>
-     
-  </ul>
-      </td>
-      <td>
-        <li>GIAC Certified Incident Handler (GCIH)</li>
-        <li>GIAC Security Essentials (GSEC)</li>
-      </td>
+       </ul>
+     </td>
+     <td>
+     <ul>
+      <li>GIAC Certified Incident Handler (GCIH)</li>
+      <li>GIAC Security Essentials (GSEC)</li>
     </ul>
-    </tr>
+    </td>
+   </tr>
 </table>
-<h4>{{=T('Experience')}}</h4>
-<table>
-<tr>
-<td>
-<ul>
-<li>
-    <h5>
-    Associate Systems Engineer | EMC <br><small>September 2014 - Current, Bellevue, WA</small></h5>
-    <p>
-       Currently I am an enterprise pre-sales account systems engineer with a focus on IT infrastructure sales to enterprise accounts. I am assigned to T-Mobile working closely with DevOps and storage teams. My technical focus is Big Data, Cloud, and DevOps, where I have created POC applications using a variety of technologies including: Hortonworks, Cloud Foundry, Heroku, Splunk, Web2Py, Python, and Ruby (currently learning).  I used prior security experience to identify issues with access control and identity management, and coordinated with RSA to deliver an enterprise-wide solution.
-    </p>
-    <h6>Technical Projects & Demos</h6>
-    <table>
-        <tr><td>    <ul>
-        <li><a href='http://devopsdash.cfapps.io'>Twitter BOT Dashboard Visualization</a></li>
-        <li><a href='http://hdfsdash.cfapps.io'>HDFS DFS Admin Report Dashboard</a></li>
-    </ul></td></tr>
-    </table>
 
-       <h6>Related Technology & Frameworks</h6>
-    <table>
+<h4>{{=T('Experience')}}</h4>
+<table class='stretch'>
+<tr>
+  <td>
+    <ul>
+
+    <li>
+    <h5>Associate Systems Engineer | EMC <br><small>September 2014 - Current, Bellevue, WA</small></h5>
+    <table class='stretch'>
         <tr>
             <td>
-                <ul>
-                    <li>Python</li><li>Web2Py</li><li>Shopify Dashing Framework</li>
-                </ul>
+                <p>Currently I am an enterprise pre-sales account systems engineer with a focus on IT infrastructure sales to enterprise accounts. I am assigned to T-Mobile working closely with DevOps and storage teams. My technical focus is Big Data, Cloud, and DevOps, where I have created POC applications using a variety of technologies including: Hortonworks, Cloud Foundry, Heroku, Splunk, Web2Py, Python, and Ruby (currently learning).  I used prior security experience to identify issues with access control and identity management, and coordinated with RSA to deliver an enterprise-wide solution.</p>
             </td>
+          </tr>
+        <tr>
             <td>
+                <h6>Technical Projects & Demos</h6>
                 <ul>
-                    <li>Hortonworks</li><li>Apache Flume</li><li>AWS EC2</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Pivotal Web Services</li><li>Spring-XD</li><li>Gradle</li>
-                </ul>
-            </td>
-                        <td>
-                <ul>
-                    <li>Cloud Foundry</li><li>Heroku</li><li>Splunk Cloud</li>
+                    <li><a href='http://devopsdash.cfapps.io'>Twitter BOT Dashboard Visualization</a></li>
+                    <li><a href='http://hdfsdash.cfapps.io'>HDFS DFS Admin Report Dashboard</a></li>
                 </ul>
             </td>
         </tr>
-    </table>
+        <tr>
+          <td>
+              <h6>Related Technology & Frameworks</h6>
+              <table class='stretch'>
+                  <tr>
+                      <td><ul><li>Python</li><li>Web2Py</li><li>Shopify Dashing Framework</li></ul></td>
+                      <td><ul><li>Hortonworks</li><li>Apache Flume</li><li>AWS EC2</li></ul></td>
+                      <td><ul><li>Pivotal Web Services</li><li>Spring-XD</li><li>Gradle</li></ul></td>
+                      <td><ul><li>Cloud Foundry</li><li>Heroku</li><li>Splunk Cloud</li></ul></td>
+                  </tr>
+              </table>
+            </td>
+        </tr>
+        </table>
+
 </li>
+
 <li>
     <h5>
         Security Consultant | TELUS Communications <br><small>July 2013 - September 2014, Vancouver BC</small>
     </h5>
-    <p>
-        Previously I worked in cyber-security operations as a member of the TELUS Cyber Threat Intelligence, and Red Team.  In this role I performed high level adversary aware threat risk assessments of critical LTE infrastructure.  I also built a threat intelligence platform using the open source Collective Intelligence Framework (CIF) toolkit along with Python to allow easy web based searching by security incident response teams (SIRT). As part of my role, I worked closely with Security Services, and Security Architecture & Compliance teams to create functional/technical RFI/RFP requirements for technology including a new Identity and Access Management System, as well as a Malware Sandbox. I provisioned user-level access to SAP and Active Directory, as well as presented developer-facing presentations on Security Awareness topics to +100 member audiences over WebEx.
-    </p>
-       <h6>Related Technology & Frameworks</h6>
-    <table>
+    <table class='stretch'>
+        <tr>
+            <td><p>Previously I worked in cyber-security operations as a member of the TELUS Cyber Threat Intelligence, and Red Team.  In this role I performed high level adversary aware threat risk assessments of critical LTE infrastructure.  I also built a threat intelligence platform using the open source Collective Intelligence Framework (CIF) toolkit along with Python to allow easy web based searching by security incident response teams (SIRT). As part of my role, I worked closely with Security Services, and Security Architecture & Compliance teams to create functional/technical RFI/RFP requirements for technology including a new Identity and Access Management System, as well as a Malware Sandbox. I provisioned user-level access to SAP and Active Directory, as well as presented developer-facing presentations on Security Awareness topics to +100 member audiences over WebEx.</p>
+            </td>
+        </tr>
         <tr>
             <td>
-                <ul>
-                    <li>Python</li><li>Web2Py</li><li>CIF Framework</li><li>Amenaza SecureITree</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Active Directory</li><li>RSA SecurID</li><li>SAP</li>
-                </ul>
+            <h6>Related Technology & Frameworks</h6>
+            <table class='stretch'>
+                <tr>
+                    <td><ul><li>Python</li><li>Web2Py</li><li>CIF Framework</li><li>Amenaza SecureITree</li></ul></td>
+                    <td><ul><li>Active Directory</li><li>RSA SecurID</li><li>SAP</li></ul></td>
+                </tr>
+            </table>
             </td>
         </tr>
     </table>
 </li>
 
 <li>
-    <h5>
-        Intrusion Prevention System Analyst | Fortinet Technologies<br><small>August 2012 - July 2013, Burnaby, BC</small>
-    </h5>
-     <p>
-This was my most technical and challenging position where I was part of a product R&D team for the IPS functionality of the Fortinet Fortigate hardware appliance. I worked daily to reverse engineer x86 binaries specific to network vulnerability and malware analysis, using IA32 Assembly debuggers to analyze packet encryption facilities. I frequently created POC Python scripts within Linux tool chains to simulate applications for blocking traffic. In order to analyze the variety of applications and malicious software it was required that I be able to quickly become proficient in a wide plethora of tools.
-    </p>
-<h6>Special Project: Remote Application Data Harvester</h6><p>
-I reverse engineered all aspects of the Ultrasurf HTTP proxy tool and created an application simulator to harvest dynamically allocated IP addresses from a remote server. Specifically I attached Ultrasurf to OllyDbg, and isolated traffic using a Fortigate IPS unit, restricting traffic flow through encryption facilities in the debugger.  I reversed the PGP crypto system that provided proxy IPs by locating the private key and re-implementing the encryption algorithm. The result was a system that decrypted PGP messages, harvested IP addresses, and auto-generated IPS signatures.
-    </p>
-<h6>Related Technology and Frameworks</h6>
-    <table>
+    <h5>Intrusion Prevention System Analyst | Fortinet Technologies<br><small>August 2012 - July 2013, Burnaby, BC</small></h5>
+    <table class='stretch'>
         <tr>
-                       <td>
-                <ul>
-                    <li>Python</li> <li>PHP</li><li>Ajax</li> <li>Bootstrap</li>
-                </ul>
-            </td>
+            <td><p>This was my most technical and challenging position where I was part of a product R&D team for the IPS functionality of the Fortinet Fortigate hardware appliance. I worked daily to reverse engineer x86 binaries specific to network vulnerability and malware analysis, using IA32 Assembly debuggers to analyze packet encryption facilities. I frequently created POC Python scripts within Linux tool chains to simulate applications for blocking traffic. In order to analyze the variety of applications and malicious software it was required that I be able to quickly become proficient in a wide plethora of tools.</p></td>
+        </tr>
+        <tr>
             <td>
-                <ul>
-                    <li>BinText</li> <li>Hacker’s View (HIEW)</li><li>IceSword</li> <li>IDA</li>
-                </ul>
+                <h6>Special Project: Remote Application Data Harvester</h6>
+                <p>I reverse engineered all aspects of the Ultrasurf HTTP proxy tool and created an application simulator to harvest dynamically allocated IP addresses from a remote server. Specifically I attached Ultrasurf to OllyDbg, and isolated traffic using a Fortigate IPS unit, restricting traffic flow through encryption facilities in the debugger.  I reversed the PGP crypto system that provided proxy IPs by locating the private key and re-implementing the encryption algorithm. The result was a system that decrypted PGP messages, harvested IP addresses, and auto-generated IPS signatures.</p>
             </td>
+        </tr>
+        <tr>
             <td>
-                <ul>
-                    <li>Immunity</li><li>InstallWatch</li><li>Mandiant</li><li>Metasploit</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>OllyDbg</li><li>ProcessExplorer</li><li>ProcMon</li><li>RegMon</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Virtual Box</li><li>VMWare Workstation</li><li>Volatility</li><li>Wireshark</li>
-                </ul>
+                <h6>Related Technology and Frameworks</h6>
+                <table class='stretch'>
+                    <tr>
+                        <td><ul><li>Python</li> <li>PHP</li><li>Ajax</li> <li>Bootstrap</li></ul></td>
+                        <td><ul><li>BinText</li> <li>Hacker’s View (HIEW)</li><li>IceSword</li> <li>IDA</li></ul></td>
+                        <td><ul><li>Immunity</li><li>InstallWatch</li><li>Mandiant</li><li>Metasploit</li></ul></td>
+                        <td><ul><li>OllyDbg</li><li>ProcessExplorer</li><li>ProcMon</li><li>RegMon</li></ul></td>
+                        <td><ul><li>Virtual Box</li><li>VMWare Workstation</li><li>Volatility</li><li>Wireshark</li></ul></td>
+                    </tr>
+                </table>
             </td>
         </tr>
     </table>
 </li>
 <li>
-   <h5>
-        Pipeline Developer (Python) Contract | Image Engine Designs<br><small>May 2012 - July 2012, Vancouver, BC</small>
-    </h5>
-    <p>
-        This was a pure Python developer role where I was contracted to create a production ready tool for managing storage space for VFX artists.  I Designed a script with User level text-file configurations, and a PyQT graphical user interface.  I also implemented robust error and exception handling facilities, with email notifications for events.  Several in-house modules were reused and extended with this tool becomming integrated into a larger image rendering Pipeline.
-    </p>
-       <h6>Related Technology & Frameworks</h6>
-    <table>
+   <h5>Pipeline Developer (Python) Contract | Image Engine Designs<br><small>May 2012 - July 2012, Vancouver, BC</small></h5>
+    <table class='stretch'>
+        <tr>
+            <td><p>This was a pure Python developer role where I was contracted to create a production ready tool for managing storage space for VFX artists.  I Designed a script with User level text-file configurations, and a PyQT graphical user interface.  I also implemented robust error and exception handling facilities, with email notifications for events.  Several in-house modules were reused and extended with this tool becomming integrated into a larger image rendering Pipeline.
+                </p>
+            </td>
+        </tr>
         <tr>
             <td>
-                <ul>
-                    <li>Python</li><li>MySQL</li><li>Eclipse IDE</li>
-                </ul>
+                <h6>Related Technology & Frameworks</h6>
+                <table class='stretch'>
+                    <tr>
+                        <td><ul><li>Python</li><li>MySQL</li><li>Eclipse IDE</li></ul></td>
+                        <td><ul><li>PY QT</li><li>Cent OS</li><li>Shotgun</li></ul></td>
+                        <td><ul><li>Make</li><li>Scons</li></ul></td>
+                    </tr>
+                </table>
             </td>
-            <td>
-                <ul>
-                    <li>PY QT</li><li>Cent OS</li><li>Shotgun</li>
-                </ul>
+        </tr>
+    </table>
+</li>
+<li>
+    <h5>Software Engineer Intern - Wireless Linux Systems | InMotion Technology<br><small>Fall 2011, New Westminster, BC</small></h5>
+    <table class='stretch'>
+        <tr>
+            <td><p>This was a requirment for graduation from UBC Masters of Software Systems program where I worked as a Python developer within a DevOps style systems engineering team. In this role I maintained and extended a Python tool-chain that managed the release of embedded device OS RPM packages. As part of a deployment team, I traveled internationally to a customer site and wrote an automation script to upgrade 560 mobile networking devices. The Python script detected devices on the network, then uploaded a Bash script that unpacked XML configuration tarballs and restarted the device to apply configurations.</p>
             </td>
+        </tr>
+        <tr>
             <td>
-                <ul>
-                    <li>Make</li><li>Scons</li>
-                </ul>
+                <h6>Related Technology & Frameworks</h6>
+                <table class='stretch'>
+                    <tr>
+                        <td><ul><li>Python</li><li>CherryPi</li><li>SQL Alchemy</li></ul></td>
+                        <td><ul><li>MySQL</li><li>TurboGears</li><li>Eclipse IDE</li></ul></td>
+                        <td><ul><li>Red Hat Linux</li><li>Ubuntu</li><li>UML</li></ul></td>
+                        <td><ul><li>Make</li></ul></td>
+                    </tr>
+                </table>
             </td>
         </tr>
     </table>
 </li>
 
-    <li>
-
-           <h5>
-        Software Engineer Intern - Wireless Linux Systems | InMotion Technology<br><small>Fall 2011, New Westminster, BC</small>
-    </h5>
-    <p>
-        This was a requirment for graduation from UBC Masters of Software Systems program where I worked as a Python developer within a DevOps style systems engineering team. In this role I maintained and extended a Python tool-chain that managed the release of embedded device OS RPM packages. As part of a deployment team, I traveled internationally to a customer site and wrote an automation script to upgrade 560 mobile networking devices. The Python script detected devices on the network, then uploaded a Bash script that unpacked XML configuration tarballs and restarted the device to apply configurations.</p>
-   <h6>Related Technology & Frameworks</h6>
-    <table>
+<li>
+<h5>Graduate Teaching Assistant (Intro. to Programming) | Texas A&M University<br><small>August 2008 - December 2010, College Station, TX</small></h5>
+    <table class='stretch'>
         <tr>
-            <td>
-                <ul>
-                    <li>Python</li><li>CherryPi</li><li>SQL Alchemy</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>MySQL</li><li>TurboGears</li><li>Eclipse IDE</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Red Hat Linux</li><li>Ubuntu</li><li>UML</li>
-                </ul>
-            </td>
-            <td><ul><li>Make</li></ul></td>
+            <td><p>I was the Teaching Assistant for the course: Introduction to Programming (Python/C).  I served two sections with up to 60 students each, where I gave code demos, answered questions, assisted with labs, and marked exams.  I also worked help desk for the Linux computer lab.</p></td>
         </tr>
     </table>
-        </li>
-<li>
-<h5>
-        Graduate Teaching Assistant (Intro. to Programming) | Texas A&M University<br><small>August 2008 - December 2010, College Station, TX</small>
-    </h5>
-    <p>
-        I was the Teaching Assistant for the course: Introduction to Programming (Python/C).  I served two sections with up to 60 students each, where I gave code demos, answered questions, assisted with labs, and marked exams.  I also worked help desk for the Linux computer lab.
-   </p>
 </li>
 </ul>
-</td></tr>
+</td>
+</tr>
 </table>
+
 <h4>{{=T('Education & Publications')}}</h4>
-<table>
-    <tr><td>
-<ul>
-<li>
-<h5>Master of Software Systems - University of British Columbia, Class of 2012</h5>
-<a href='http://blogs.ubc.ca/computersecurity/files/2012/04/BBertka_bbertka_571B_final.pdf'>802.11w security: DoS attacks and vulnerability controls. In Proc. of Infocom, 2012.</a>
-</li>
-<li><h5>Master of Science, Visualization - Texas A&M University, College Station</h5>
-<a href='http://repository.tamu.edu/bitstream/handle/1969.1/ETD-TAMU-2010-12-8736/BERTKA-THESIS.pdf'>Modding for Emergence: Using Cellular Automata, Randomness, and Influence Maps in the Source Game Engine</a>
-</li>
-<li><h5>Bachelor of Arts, Mathematics - University of California, Santa Cruz</h5>
-<a href='http://fei.edu.br/~psergio/CG_arquivos/IntroSplines.pdf'>Introduction to Bezier Curves, B-Splines, and Tensor Product Surfaces</a>
-</li>
-</ul>
-    </td></tr>
+<table class='stretch'>
+    <tr>
+        <td>
+            <ul>
+                <li><h5>Master of Software Systems - University of British Columbia, Class of 2012</h5>
+                    <a href='http://blogs.ubc.ca/computersecurity/files/2012/04/BBertka_bbertka_571B_final.pdf'>802.11w security: DoS attacks and vulnerability controls. In Proc. of Infocom, 2012.</a>
+                </li>
+                <li><h5>Master of Science, Visualization - Texas A&M University, College Station</h5>
+                    <a href='http://repository.tamu.edu/bitstream/handle/1969.1/ETD-TAMU-2010-12-8736/BERTKA-THESIS.pdf'>Modding for Emergence: Using Cellular Automata, Randomness, and Influence Maps in the Source Game Engine</a>
+                </li>
+                <li><h5>Bachelor of Arts, Mathematics - University of California, Santa Cruz</h5>
+                    <a href='http://fei.edu.br/~psergio/CG_arquivos/IntroSplines.pdf'>Introduction to Bezier Curves, B-Splines, and Tensor Product Surfaces</a>
+                </li>
+            </ul>
+        </td>
+    </tr>
 </table>
 
 {{elif 'content' in globals():}}
@@ -269,24 +248,10 @@ I reverse engineered all aspects of the Ultrasurf HTTP proxy tool and created an
 {{pass}}
 
 {{block right_sidebar}}
-
 <table>
-<tr>
-    <td>
-        <br>
-        <img src="/init/static/images/giac.png">
-    </td>
-    </tr>
-    <tr>
-    <td>
-        <br>
-        <img src="/init/static/images/expert.jpg">
-    </td>
-    </tr>
+    <tr><td><br><img src="/init/static/images/giac.png"></td></tr>
+    <tr><td><br><img src="/init/static/images/expert.jpg"></td></tr>
 </table>
 
 
 {{end}}
-
-
-
