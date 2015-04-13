@@ -53,7 +53,7 @@
   # using sidebars need to know what sidebar you want to use
   left_sidebar_enabled = globals().get('left_sidebar_enabled',False)
   right_sidebar_enabled = globals().get('right_sidebar_enabled',False)
-  middle_columns = {0:'span12',1:'span11',2:'span9'}[
+  middle_columns = {0:'span12',1:'span10',2:'span8'}[
     (left_sidebar_enabled and 1 or 0)+(right_sidebar_enabled and 1 or 0)]
   }}
 
@@ -95,18 +95,31 @@
       {{if response.title:}}
         <div class="span12">
             <div class="page-header">
-                <h1>
-                    {{=response.title}}
-                    <small>{{=response.subtitle or ''}}</small>
-                </h1>
+                <table>
+                    <tr>
+                        <td><img src="/init/static/images/profile.png"></td>
+                        <td style='vertical-align:  bottom;'>
+                            <h1>{{=response.title}}<br><small>{{=response.subtitle or ''}}</small></h1>
+                        </td>
+                    </tr>
+                </table>
             </div>
+<table class='stretch'>
+    <tr>
+        <td>{{=A(I(_class='fa fa-github fa-3x'),_href="https://github.com/bbertka")}}</td>
+        <td>{{=A(I(_class='fa fa-linkedin fa-3x'),_href="https://www.linkedin.com/in/benbertka")}}</td>
+        <td>{{=A(I(_class='fa fa-twitter fa-3x'),_href="https://twitter.com/bbertka")}}</td>
+        <td>{{=A(I(_class='fa fa-envelope fa-3x'),_href="mailto:bbertka@gmail.com")}}</td>
+        <td>{{=A(I(_class='fa fa-download fa-3x'),_href="/init/static/bertka_resume_2015.pdf?attachment")}}</td>
+    </tr>
+</table>
         </div>
 	{{pass}}
     </header>
 
     <section id="main" class="main row">
         {{if left_sidebar_enabled:}}
-        <div class="span1 left-sidebar">
+        <div class="span2 left-sidebar">
             {{block left_sidebar}}
             <h3>Left Sidebar</h3>
             <p></p>
@@ -133,6 +146,15 @@
     <!-- Footer ================================================== -->
     <div class="row">
         <footer class="footer span12" id="footer">
+                    <table class='stretch'>
+    <tr>
+        <td>{{=A(I(_class='fa fa-github fa-3x'),_href="https://github.com/bbertka")}}</td>
+        <td>{{=A(I(_class='fa fa-linkedin fa-3x'),_href="https://www.linkedin.com/in/benbertka")}}</td>
+        <td>{{=A(I(_class='fa fa-twitter fa-3x'),_href="https://twitter.com/bbertka")}}</td>
+        <td>{{=A(I(_class='fa fa-envelope fa-3x'),_href="mailto:bbertka@gmail.com")}}</td>
+        <td>{{=A(I(_class='fa fa-download fa-3x'),_href="/init/static/bertka_resume_2015.pdf?attachment")}}</td>
+    </tr>
+</table>
             <div class="footer-content">
                 {{block footer}} <!-- this is default footer -->
                 <div class="copyright pull-left">{{=T('Created by Ben Bertka, Copyright')}} &#169; {{=request.now.year}}</div>
@@ -155,5 +177,6 @@
 
 </body>
 </html>
+
 
 

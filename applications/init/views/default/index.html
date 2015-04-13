@@ -1,4 +1,4 @@
-{{left_sidebar_enabled=True,right_sidebar_enabled=True,('message' in globals())}}
+{{left_sidebar_enabled,right_sidebar_enabled,('message' in globals())}}
 {{extend 'layout.html'}}
 
 {{if 'message' in globals():}}
@@ -234,33 +234,12 @@
 
 {{block left_sidebar}}
 {{if request.user_agent().is_mobile:}}
-<table class='stretch'>
-    <tr><td>
-{{=A(I(_class='fa fa-github fa-2x'),_href="https://github.com/bbertka")}}
-    </td>
-        <td>
-{{=A(I(_class='fa fa-linkedin fa-2x'),_href="https://www.linkedin.com/in/benbertka")}}
-    </td>
-        <td>
-{{=A(I(_class='fa fa-twitter fa-2x'),_href="https://twitter.com/bbertka")}}
-    </td>
-        <td>
-{{=A(I(_class='fa fa-envelope fa-2x'),_href="mailto:bbertka@gmail.com")}}
-    </td>
-        <td>
-{{=A(I(_class='fa fa-download fa-2x'),_href="/init/static/bertka_resume_2015.pdf?attachment")}}
-    </td></tr>
-</table>
+
 {{else:}}
-<table class='stretch'>
-    <tr><td>{{=A(I(_class='fa fa-github fa-4x'),_href="https://github.com/bbertka")}}</td></tr>
-    <tr><td>{{=A(I(_class='fa fa-linkedin fa-4x'),_href="https://www.linkedin.com/in/benbertka")}}</td></tr>
-    <tr><td>{{=A(I(_class='fa fa-twitter fa-4x'),_href="https://twitter.com/bbertka")}}</td></tr>
-    <tr><td>{{=A(I(_class='fa fa-envelope fa-4x'),_href="mailto:bbertka@gmail.com")}}</td></tr>
-    <tr><td>{{=A(I(_class='fa fa-download fa-4x'),_href="/init/static/bertka_resume_2015.pdf?attachment")}}</td></tr>
-</table>
+
 {{pass}}
 
 
 {{end}}
+
 
