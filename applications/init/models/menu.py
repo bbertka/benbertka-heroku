@@ -10,6 +10,11 @@ response.logo = A(I(_class='fa fa-leaf fa-lg'), _class="brand",_href="/")
 #response.title = 'Ben Bertka'
 #response.subtitle = 'Digital Resume'
 
+global right_sidebar_enabled, left_sidebar_enabled
+right_sidebar_enabled=True
+left_sidebar_enabled=False
+
+
 ## read more at http://dev.w3.org/html5/markup/meta.name.html
 response.meta.author = 'Ben Bertka <bbertka@gmail.com>'
 response.meta.keywords = 'web2py, python, framework'
