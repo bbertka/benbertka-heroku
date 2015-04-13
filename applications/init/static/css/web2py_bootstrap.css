@@ -267,3 +267,7 @@ div.controls .error {
 .stretch {
  width: 100%;
 }
+
+.fa-3x {
+  color: rgb(51, 51, 51);
+}
