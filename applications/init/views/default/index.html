@@ -1,7 +1,22 @@
 {{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
 {{extend 'layout.html'}}
-{{=A(I(_class='fa fa-envelope fa-2x brand'),_href="mailto:bbertka@gmail.com")}}
-{{=A(I(_class='fa fa-download fa-2x brand'), B(' Download PDF'),_href="/init/static/bertka_resume_2015.pdf?attachment")}}
+<table>
+    <tr><td>
+{{=A(I(_class='fa fa-github fa-2x brand'), B('  '),_href="https://github.com/bbertka")}}
+    </td>
+        <td>
+{{=A(I(_class='fa fa-linkedin fa-2x brand'), B('  '),_href="https://www.linkedin.com/in/benbertka")}}
+    </td>
+        <td>
+{{=A(I(_class='fa fa-twitter fa-2x brand'), B('  '),_href="https://twitter.com/bbertka")}}
+    </td>
+        <td>
+{{=A(I(_class='fa fa-envelope fa-2x brand'),B('  '),_href="mailto:bbertka@gmail.com")}}
+    </td>
+        <td>
+{{=A(I(_class='fa fa-download fa-2x brand'), B('  '),_href="/init/static/bertka_resume_2015.pdf?attachment")}}
+    </td></tr>
+</table>
 {{if 'message' in globals():}}
 <h4>{{=T('Summary')}}</h4>
 <table>
@@ -100,35 +115,8 @@
         Security Consultant | TELUS Communications <br><small>July 2013 - September 2014, Vancouver BC</small>
     </h5>
     <p>
-        Previously I worked in cyber-security operations as a member of the TELUS Cyber Threat Intelligence, and Red Team.  In this role I performed high level adversary aware threat risk assessments of critical LTE infrastructure.  I also built a threat intelligence platform using the open source Collective Intelligence Framework (CIF) toolkit along with Python to allow easy web based searching by incident handlers. As part of my role, I worked closely with Access Management, and Architecture Compliance teams to create functional/technical RFI/RFP requirements for technology including a new Access and Identity Management System, as well as a Malware Sandbox.
+        Previously I worked in cyber-security operations as a member of the TELUS Cyber Threat Intelligence, and Red Team.  In this role I performed high level adversary aware threat risk assessments of critical LTE infrastructure.  I also built a threat intelligence platform using the open source Collective Intelligence Framework (CIF) toolkit along with Python to allow easy web based searching by security incident response teams (SIRT). As part of my role, I worked closely with Security Services, and Security Architecture & Compliance teams to create functional/technical RFI/RFP requirements for technology including a new Identity and Access Management System, as well as a Malware Sandbox. I provisioned user-level access to SAP and Active Directory, as well as presented developer-facing presentations on Security Awareness topics to +100 member audiences over WebEx.
     </p>
-  <h6>
-      Red Team & Cyber Threat Intelligence
-    </h6>
-    <ul>
-<li>Participating in high-level adversary-aware threat-risk assessments of critical infrastructure</li>
-<li>Quantifying and modeling threat-risks via attack tree analysis using Amenaza SecurITree</li>
-<li>Synthesizing analysis of multiple adversary and victim models into final threat-risk analysis</li>
-<li>Authoring formalized assessment reports as primary author containing findings and mitigation</li>
-<li>Presenting findings to system owners, team, and directors via WebEx PowerPoint</li>
-<li>Designed a novel approach to threat modeling using graph theory, now a project standard</li>
-    </ul>
-  <h6>
-Security Architecture & Compliance    </h6>
-<ul>
-<li>Eliciting business, functional, and technical requirements for RFI/RFP for new security technology</li>
-<li>Facilitating vendor visits for their POC, setting up VMWare vCloud instances for solutions</li>
-<li>Worked with RSA-Aveksa, Oracle, and DELL-Quest to evaluate appropriate IAM for TELUS</li>
-<li>Presenting WebEx PowerPoint to 100+ member audiences on security awareness topics</li>
-</ul>
-<h6>
-Identity & Access Management
-    </h6>
-    <ul>
-<li>Audited access to Windows Active Directory Groups for a yearly PCI audit</li>
-<li>Provisioned access to SAP, Linux, Active Directory Groups, Smartcards, and RSA SecurID tokens</li>
-<li>Analyzed provisioning workflow, identified inefficiencies, and offered optimization strategy</li>
-   </ul>
        <h6>Related Technology & Frameworks</h6>
     <table>
         <tr>
@@ -151,23 +139,12 @@ Identity & Access Management
         Intrusion Prevention System Analyst | Fortinet Technologies<br><small>August 2012 - July 2013, Burnaby, BC</small>
     </h5>
      <p>
-This was my most technical and challenging position where I was part of a product R&D team for the IPS functionality of the Fortinet Fortigate hardware appliance.
+This was my most technical and challenging position where I was part of a product R&D team for the IPS functionality of the Fortinet Fortigate hardware appliance. I worked daily to reverse engineer x86 binaries specific to network vulnerability and malware analysis, using IA32 Assembly debuggers to analyze packet encryption facilities. I frequently created POC Python scripts within Linux tool chains to simulate applications for blocking traffic. In order to analyze the variety of applications and malicious software it was required that I be able to quickly become proficient in a wide plethora of tools.
     </p>
-<ul>
- <li>Owned development and upkeep of evasion tool IPS signature base for the FortiGate appliance</li>
-<li>Reverse engineered x86 binaries specific to network vulnerability and malware analysis</li>
-<li>Analyzed TCP/UDP traffic captures from deep packet inspection (DPI) using Wireshark</li>
-<li>Developed FortiGate IPS packet signatures to detect and control vulnerabilities</li>
-<li>Optimized intrusion and application control sensors by using PCRE Regular Expressions</li>
-<li>Diagnosed and implemented solutions to escalated tickets related to application control</li>
-<li>Cross-trained with the Anti-Virus team in behavioral, static, and dynamic malware analysis</li>
-<li>Applied the techniques malware analysis to perform IPS analysis for application control</li>
-<li>Managed an IPS unit and security lab environment with VMWare, VirtualBox, Hubs and Switches</li>
-</ul>
 <h6>Special Project: Remote Application Data Harvester</h6><p>
 I reverse engineered all aspects of the Ultrasurf HTTP proxy tool and created an application simulator to harvest dynamically allocated IP addresses from a remote server. Specifically I attached Ultrasurf to OllyDbg, and isolated traffic using a Fortigate IPS unit, restricting traffic flow through encryption facilities in the debugger.  I reversed the PGP crypto system that provided proxy IPs by locating the private key and re-implementing the encryption algorithm. The result was a system that decrypted PGP messages, harvested IP addresses, and auto-generated IPS signatures.
     </p>
-<h6>Related Tools and Frameworks</h6>
+<h6>Related Technology and Frameworks</h6>
     <table>
         <tr>
                        <td>
@@ -310,5 +287,6 @@ I reverse engineered all aspects of the Ultrasurf HTTP proxy tool and created an
 
 
 {{end}}
+
 
 

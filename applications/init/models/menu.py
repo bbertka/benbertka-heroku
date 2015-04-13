@@ -4,7 +4,7 @@
 #########################################################################
 ## Customize your APP title, subtitle and menus here
 #########################################################################
-response.logo = A(I(_class='fa fa-code fa-2x'), _class="brand",_href="/")
+#response.logo = A(I(_class='fa fa-code fa-2x'), _class="brand",_href="/")
 #response.logo = A(B('Ben Bertka'), _class="brand",_href="/")
 #Overridden by App
 #response.title = 'Ben Bertka'
@@ -23,10 +23,10 @@ response.google_analytics_id = None
 #########################################################################
 
 response.menu = [
-(CAT(I(_class='fa fa-home fa-2x brand')), False, "/"),
-(CAT(I(_class='fa fa-github fa-2x brand')), False, "https://github.com/bbertka"),
-(CAT(I(_class='fa fa-linkedin fa-2x brand')), False, "https://www.linkedin.com/in/benbertka"),
-(CAT(I(_class='fa fa-twitter fa-2x brand')), False, "https://twitter.com/bbertka"),
+#(CAT(I(_class='fa fa-home fa-2x brand')), False, "/"),
+#(CAT(I(_class='fa fa-github fa-2x brand')), False, "https://github.com/bbertka"),
+#(CAT(I(_class='fa fa-linkedin fa-2x brand')), False, "https://www.linkedin.com/in/benbertka"),
+#(CAT(I(_class='fa fa-twitter fa-2x brand')), False, "https://twitter.com/bbertka"),
 ]
 
 DEVELOPMENT_MENU = False
