@@ -53,7 +53,7 @@
   # using sidebars need to know what sidebar you want to use
   left_sidebar_enabled = globals().get('left_sidebar_enabled',False)
   right_sidebar_enabled = globals().get('right_sidebar_enabled',False)
-  middle_columns = {0:'span12',1:'span9',2:'span6'}[
+  middle_columns = {0:'span12',1:'span9',2:'span8'}[
     (left_sidebar_enabled and 1 or 0)+(right_sidebar_enabled and 1 or 0)]
   }}
 
@@ -106,7 +106,7 @@
 
     <section id="main" class="main row">
         {{if left_sidebar_enabled:}}
-        <div class="span3 left-sidebar">
+        <div class="span1 left-sidebar">
             {{block left_sidebar}}
             <h3>Left Sidebar</h3>
             <p></p>
@@ -155,3 +155,4 @@
 
 </body>
 </html>
+

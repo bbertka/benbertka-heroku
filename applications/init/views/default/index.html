@@ -1,26 +1,7 @@
-{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{left_sidebar_enabled=True,right_sidebar_enabled=True,('message' in globals())}}
 {{extend 'layout.html'}}
-<table class='stretch'>
-    <tr><td>
-{{=A(I(_class='fa fa-github fa-2x brand'), B('  '),_href="https://github.com/bbertka")}}
-    </td>
-        <td>
-{{=A(I(_class='fa fa-linkedin fa-2x brand'), B('  '),_href="https://www.linkedin.com/in/benbertka")}}
-    </td>
-        <td>
-{{=A(I(_class='fa fa-twitter fa-2x brand'), B('  '),_href="https://twitter.com/bbertka")}}
-    </td>
-        <td>
-{{=A(I(_class='fa fa-envelope fa-2x brand'),B('  '),_href="mailto:bbertka@gmail.com")}}
-    </td>
-        <td>
-{{=A(I(_class='fa fa-download fa-2x brand'), B('  '),_href="/init/static/bertka_resume_2015.pdf?attachment")}}
-    </td></tr>
-</table>
 
 {{if 'message' in globals():}}
-
-
 
 <h4>{{=T('Summary')}}</h4>
 <table class='stretch'>
@@ -83,7 +64,7 @@
     <ul>
 
     <li>
-    <h5>Associate Systems Engineer | EMC <br><small>September 2014 - Current, Bellevue, WA</small></h5>
+        <h5>Associate Systems Engineer<br>EMC Corporation <br><small>9/2014 - Current, Bellevue, WA</small></h5>
     <table class='stretch'>
         <tr>
             <td>
@@ -116,7 +97,7 @@
 
 <li>
     <h5>
-        Security Consultant | TELUS Communications <br><small>July 2013 - September 2014, Vancouver BC</small>
+        Security Consultant<br>TELUS Communications<br><small>7/2013 - 9/2014, Vancouver BC</small>
     </h5>
     <table class='stretch'>
         <tr>
@@ -138,7 +119,7 @@
 </li>
 
 <li>
-    <h5>Intrusion Prevention System Analyst | Fortinet Technologies<br><small>August 2012 - July 2013, Burnaby, BC</small></h5>
+    <h5>Intrusion Prevention System Analyst<br>Fortinet Technologies CANADA<br><small>8/2012 - 7/2013, Burnaby, BC</small></h5>
     <table class='stretch'>
         <tr>
             <td><p>This was my most technical and challenging position where I was part of a product R&D team for the IPS functionality of the Fortinet Fortigate hardware appliance. I worked daily to reverse engineer x86 binaries specific to network vulnerability and malware analysis, using IA32 Assembly debuggers to analyze packet encryption facilities. I frequently created POC Python scripts within Linux tool chains to simulate applications for blocking traffic. In order to analyze the variety of applications and malicious software it was required that I be able to quickly become proficient in a wide plethora of tools.</p></td>
@@ -163,7 +144,7 @@
     </table>
 </li>
 <li>
-   <h5>Pipeline Developer (Python) Contract | Image Engine Designs<br><small>May 2012 - July 2012, Vancouver, BC</small></h5>
+    <h5>Pipeline Developer (Python) Contract<br>Image Engine Designs<br><small>5/2012 - 7/2012, Vancouver, BC</small></h5>
     <table class='stretch'>
         <tr>
             <td><p>This was a pure Python developer role where I was contracted to create a production ready tool for managing storage space for VFX artists.  I Designed a script with User level text-file configurations, and a PyQT graphical user interface.  I also implemented robust error and exception handling facilities, with email notifications for events.  Several in-house modules were reused and extended with this tool becomming integrated into a larger image rendering Pipeline.
@@ -184,10 +165,10 @@
     </table>
 </li>
 <li>
-    <h5>Software Engineer Intern - Wireless Linux Systems | InMotion Technology<br><small>Fall 2011, New Westminster, BC</small></h5>
+    <h5>Software Engineer Intern<br>InMotion Technology<br><small>Fall 2011, New Westminster, BC</small></h5>
     <table class='stretch'>
         <tr>
-            <td><p>This was a requirment for graduation from UBC Masters of Software Systems program where I worked as a Python developer within a DevOps style systems engineering team. In this role I maintained and extended a Python tool-chain that managed the release of embedded device OS RPM packages. As part of a deployment team, I traveled internationally to a customer site and wrote an automation script to upgrade 560 mobile networking devices. The Python script detected devices on the network, then uploaded a Bash script that unpacked XML configuration tarballs and restarted the device to apply configurations.</p>
+            <td><p>This was an internship requirment for graduation from UBC Masters of Software Systems program where I worked as a Python developer within a DevOps style systems engineering team. In this role I maintained and extended a Python tool-chain that managed the release of embedded device OS RPM packages. As part of a deployment team, I traveled internationally to a customer site and wrote an automation script to upgrade 560 mobile networking devices. The Python script detected devices on the network, then uploaded a Bash script that unpacked XML configuration tarballs and restarted the device to apply configurations.</p>
             </td>
         </tr>
         <tr>
@@ -205,7 +186,7 @@
 </li>
 
 <li>
-<h5>Graduate Teaching Assistant (Intro. to Programming) | Texas A&M University<br><small>August 2008 - December 2010, College Station, TX</small></h5>
+    <h5>Graduate Teaching Assistant<br>Texas A&M University<br><small>8/2008 - 12/2010, College Station, TX</small></h5>
     <table class='stretch'>
         <tr>
             <td><p>I was the Teaching Assistant for the course: Introduction to Programming (Python/C).  I served two sections with up to 60 students each, where I gave code demos, answered questions, assisted with labs, and marked exams.  I also worked help desk for the Linux computer lab.</p></td>
@@ -222,13 +203,13 @@
     <tr>
         <td>
             <ul>
-                <li><h5>Master of Software Systems - University of British Columbia, Class of 2012</h5>
+                <li><h5>Master of Software Systems<br>University of British Columbia<br><small>Vancouver BC, Canada</small></h5>
                     <a href='http://blogs.ubc.ca/computersecurity/files/2012/04/BBertka_bbertka_571B_final.pdf'>802.11w security: DoS attacks and vulnerability controls. In Proc. of Infocom, 2012.</a>
                 </li>
-                <li><h5>Master of Science, Visualization - Texas A&M University, College Station</h5>
+                <li><h5>Master of Science, Visualization<br>Texas A&M University<br><small>College Station, Texas</small></h5>
                     <a href='http://repository.tamu.edu/bitstream/handle/1969.1/ETD-TAMU-2010-12-8736/BERTKA-THESIS.pdf'>Modding for Emergence: Using Cellular Automata, Randomness, and Influence Maps in the Source Game Engine</a>
                 </li>
-                <li><h5>Bachelor of Arts, Mathematics - University of California, Santa Cruz</h5>
+                <li><h5>Bachelor of Arts, Mathematics<br>University of California<br><small>Santa Cruz, California</small></h5>
                     <a href='http://fei.edu.br/~psergio/CG_arquivos/IntroSplines.pdf'>Introduction to Bezier Curves, B-Splines, and Tensor Product Surfaces</a>
                 </li>
             </ul>
@@ -249,6 +230,36 @@
     <tr><td><br><img src="/init/static/images/giac.png"></td></tr>
     <tr><td><br><img src="/init/static/images/expert.jpg"></td></tr>
 </table>
+{{end}}
+
+{{block left_sidebar}}
+{{if request.user_agent().is_mobile:}}
+<table class='stretch'>
+    <tr><td>
+{{=A(I(_class='fa fa-github fa-2x brand'), B('  '),_href="https://github.com/bbertka")}}
+    </td>
+        <td>
+{{=A(I(_class='fa fa-linkedin fa-2x brand'), B('  '),_href="https://www.linkedin.com/in/benbertka")}}
+    </td>
+        <td>
+{{=A(I(_class='fa fa-twitter fa-2x brand'), B('  '),_href="https://twitter.com/bbertka")}}
+    </td>
+        <td>
+{{=A(I(_class='fa fa-envelope fa-2x brand'),B('  '),_href="mailto:bbertka@gmail.com")}}
+    </td>
+        <td>
+{{=A(I(_class='fa fa-download fa-2x brand'), B('  '),_href="/init/static/bertka_resume_2015.pdf?attachment")}}
+    </td></tr>
+</table>
+{{else:}}
+<table class='stretch'>
+    <tr><td>{{=A(I(_class='fa fa-github fa-2x brand'), B('  '),_href="https://github.com/bbertka")}}</td></tr>
+    <tr><td>{{=A(I(_class='fa fa-linkedin fa-2x brand'), B('  '),_href="https://www.linkedin.com/in/benbertka")}}</td></tr>
+    <tr><td>{{=A(I(_class='fa fa-twitter fa-2x brand'), B('  '),_href="https://twitter.com/bbertka")}}</td></tr>
+    <tr><td>{{=A(I(_class='fa fa-envelope fa-2x brand'),B('  '),_href="mailto:bbertka@gmail.com")}}</td></tr>
+    <tr><td>{{=A(I(_class='fa fa-download fa-2x brand'), B('  '),_href="/init/static/bertka_resume_2015.pdf?attachment")}}</td></tr>
+</table>
+{{pass}}
 
 
 {{end}}
